@@ -291,7 +291,7 @@ nav .fas {
 
 @media only screen and (max-width:600px) {
     #header {
-        background-image: url(photos/vasu.jpg);
+        background-image: url(vasu.jpg);
     }
 
     .header-text {
