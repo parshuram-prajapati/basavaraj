@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio Website</title>
+  <title>Fitness by Basavaraj</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/b6458ba896.js" crossorigin="anonymous"></script>
 </head>
@@ -39,11 +39,7 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>
-            As a passionate gym trainer, I am dedicated to helping individuals
-            achieve their fitness goals through structured workouts,
-            personalized training plans, and expert guidance on nutrition.
-          </p>
+          <p>As a passionate gym trainer, I am dedicated to helping individuals achieve their fitness goals through structured workouts, personalized training plans, and expert guidance on nutrition.</p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
             <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
@@ -73,22 +69,22 @@
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
         <div>
-          <i class="fas fa-code"></i>
-          <h2>Personal-Training</h2>
-          <p>I’m a passionate and certified Personal Gym Trainer with over five years of experience in fitness training and nutrition coaching. My goal is simple: to help people feel stronger, healthier, and more confident in their own bodies.</p>
-          <a href="#">Learn more</a>
+          <i class="fas fa-user"></i>
+          <h2>Personal Training</h2>
+          <p>Certified Personal Trainer with 5+ years experience helping clients feel stronger, healthier, and more confident.</p>
+          <a href="#contact">Learn more</a>
         </div>
         <div>
-          <i class="fas fa-crop-alt"></i>
-          <h2>Weight-loss/Weight-Gain</h2>
-          <p>Whether you want to lose weight or build muscle, I create personalized workout and nutrition plans to fit your goals. Burn fat, boost metabolism, or gain lean muscle with the right training and diet. Let’s get started on your transformation! 🚀 </p>
-          <a href="#">Learn more</a>
+          <i class="fas fa-dumbbell"></i>
+          <h2>Weight-loss / Weight-Gain</h2>
+          <p>Personalized plans to help you burn fat, build muscle, and transform your body. Let's get started today! 🚀</p>
+          <a href="#contact">Learn more</a>
         </div>
         <div>
-          <i class="fab fa-app-store"></i>
-          <h2>Nutrition-Coaching</h2>
-          <p>Good nutrition is the foundation of fitness. Whether your goal is weight loss, muscle gain, or overall well-being, I provide personalized diet plans that match your lifestyle and fitness goals. Eat smarter, fuel your body, and see real results! 🍎🔥</p>
-          <a href="#">Learn more</a>
+          <i class="fas fa-apple-alt"></i>
+          <h2>Nutrition Coaching</h2>
+          <p>Customized diet plans tailored to your goals and lifestyle. Fuel your body right and achieve long-term results. 🍎🔥</p>
+          <a href="#contact">Learn more</a>
         </div>
       </div>
     </div>
@@ -105,15 +101,15 @@
           <div class="social-icons">
             <a href="https://www.facebook.com/basavaraj.vagyanavar.7"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/the_horror_beast?igsh=dHBzMW9mMDQzNnNy"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com/@beastcreation226?si=j944QZ7YrEM6UFK1"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://youtube.com/@beastcreation226?si=j944QZ7YrEM6UFK1"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
         <div class="contact-right">
           <form name="submit-to-google-sheet">
-            <input type="text" name="Name" placeholder="Your Name" required />
-            <input type="email" name="Email" placeholder="Your Email" required />
-            <input type="tel" name="Phone" placeholder="Your Mobile Number" pattern="[0-9]{10}" required />
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="tel" name="phone" placeholder="Your Mobile Number" pattern="[0-9]{10}" required />
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
           <span id="msg"></span>
@@ -130,14 +126,12 @@
     function opentab(tabname, event) {
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
-
       for (var tablink of tablinks) {
         tablink.classList.remove("active-link");
       }
       for (var tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
       }
-
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab");
     }
@@ -150,23 +144,25 @@
       sidemenu.style.right = "-200px";
     }
   </script>
+
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyrZLGHpg04WFyt0qq3tlrL_RN-NfgUw_9vg6lZNcMXm5vqzkJz0yELu5fob7ywWdx0/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyrZLGHpg04WFyt0qq3tlrL_RN-NfgUw_9vg6lZNcMXm5vqzkJz0yELu5fob7ywWdx0/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
 
     form.addEventListener('submit', e => {
-      e.preventDefault()
+      e.preventDefault();
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-          msg.innerHTML = "Message sent successfully"
-          setTimeout(function () {
-            msg.innerHTML = ""
-          }, 3000)
-          form.reset()
+          msg.innerHTML = "✅ Message sent successfully!";
+          setTimeout(() => msg.innerHTML = "", 3000);
+          form.reset();
         })
-        .catch(error => console.error('Error!', error.message))
-    })
+        .catch(error => {
+          msg.innerHTML = "❌ Message failed!";
+          console.error('Error!', error.message);
+        });
+    });
   </script>
 </body>
 
