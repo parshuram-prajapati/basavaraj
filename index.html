@@ -2,183 +2,172 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b6458ba896.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/b6458ba896.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <h2 class="logo-text">Fitness by Basavaraj</h2>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about"">About</a></li>
-                    <li><a href=" #services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>GYM-TRAINER</p>
-                <h1>Hi, I'm <span>Basavaraj</span></h1>
-            </div>
-        </div>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h2 class="logo-text">Fitness by Basavaraj</h2>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>GYM-TRAINER</p>
+        <h1>Hi, I'm <span>Basavaraj</span></h1>
+      </div>
     </div>
+  </div>
 
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="basu1.jpg" alt="Profile Picture">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        As a passionate gym trainer, I am dedicated to helping individuals achieve their fitness goals
-                        through structured workouts, personalized training plans, and expert guidance on nutrition.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Fitness Trainer</span><br>Helping individuals achieve their fitness goals.</li>
-                            <li><span>One-on-One Sessions</span><br>Personalized training sessions.</li>
-                            <li><span>Dietitian</span><br>Providing customized diet plans.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2020 - Present</span><br>Fitness training specialist.</li>
-                            <li><span>2022 - Present</span><br>Personalized one-on-one coaching.</li>
-                            <li><span>2022 - Present</span><br>Professional dietitian.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="basu1.jpg" alt="Profile Picture" />
         </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            As a passionate gym trainer, I am dedicated to helping individuals
+            achieve their fitness goals through structured workouts,
+            personalized training plans, and expert guidance on nutrition.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Fitness Trainer</span><br>Helping individuals achieve their fitness goals.</li>
+              <li><span>One-on-One Sessions</span><br>Personalized training sessions.</li>
+              <li><span>Dietitian</span><br>Providing customized diet plans.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2020 - Present</span><br>Fitness training specialist.</li>
+              <li><span>2022 - Present</span><br>Personalized one-on-one coaching.</li>
+              <li><span>2022 - Present</span><br>Professional dietitian.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <!------------services-------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Personal-Training</h2>
-                    <p>I’m a passionate and certified Personal Gym Trainer with over five years of experience in
-                        fitness training and nutrition coaching. My goal is simple: to help people feel stronger,
-                        healthier, and more confident in their own bodies.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>Weight-loss/Weight-Gain</h2>
-                    <p>Whether you want to lose weight or build muscle, I create personalized workout and nutrition
-                        plans to fit your goals. Burn fat, boost metabolism, or gain lean muscle with the right training
-                        and diet. Let’s get started on your transformation! 🚀 </p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fab fa-app-store"></i>
-                    <h2>Nutrition-Coaching</h2>
-                    <p>Good nutrition is the foundation of fitness. Whether your goal is weight loss, muscle gain, or
-                        overall well-being, I provide personalized diet plans that match your lifestyle and fitness
-                        goals. Eat smarter, fuel your body, and see real results! 🍎🔥</p>
-                    <a href="#">Learn more</a>
-                </div>
+  </div>
 
-            </div>
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Personal-Training</h2>
+          <p>I’m a passionate and certified Personal Gym Trainer with over five years of experience in fitness training and nutrition coaching. My goal is simple: to help people feel stronger, healthier, and more confident in their own bodies.</p>
+          <a href="#">Learn more</a>
         </div>
+        <div>
+          <i class="fas fa-crop-alt"></i>
+          <h2>Weight-loss/Weight-Gain</h2>
+          <p>Whether you want to lose weight or build muscle, I create personalized workout and nutrition plans to fit your goals. Burn fat, boost metabolism, or gain lean muscle with the right training and diet. Let’s get started on your transformation! 🚀 </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fab fa-app-store"></i>
+          <h2>Nutrition-Coaching</h2>
+          <p>Good nutrition is the foundation of fitness. Whether your goal is weight loss, muscle gain, or overall well-being, I provide personalized diet plans that match your lifestyle and fitness goals. Eat smarter, fuel your body, and see real results! 🍎🔥</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
     </div>
-    <!-----------------contact---------------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p> <i class="fa-solid fa-paper-plane"></i>basavarajvagyanavar143@gmail.com</p>
-                    <p> <i class="fa-solid fa-phone"></i> 9740065854</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/basavaraj.vagyanavar.7"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/the_horror_beast?igsh=dHBzMW9mMDQzNnNy"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com/@beastcreation226?si=j944QZ7YrEM6UFK1"><i
-                                class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                   <form name="submit-to-google-sheet">
-    <input type="text" name="Name" placeholder="Your Name" required>
-    <input type="email" name="Email" placeholder="Your Email" required>
-    <input type="tel" name="Phone" placeholder="Your Mobile Number" pattern="[0-9]{10}" required>
-    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-    <button type="submit" class="btn btn2">Submit</button>
-</form>
+  </div>
 
-                    <span id="msg"></span>
-                </div>
-            </div>
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> basavarajvagyanavar143@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 9740065854</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/basavaraj.vagyanavar.7"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/the_horror_beast?igsh=dHBzMW9mMDQzNnNy"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@beastcreation226?si=j944QZ7YrEM6UFK1"><i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
-        <div class="copyright">
-            <p>© 2025 Parshuram. Designed and Developed by Me. All Rights Reserved.</p>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <input type="tel" name="Phone" placeholder="Your Mobile Number" pattern="[0-9]{10}" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
         </div>
+      </div>
     </div>
+    <div class="copyright">
+      <p>© 2025 Parshuram. Designed and Developed by Me. All Rights Reserved.</p>
+    </div>
+  </div>
 
-    <script>
-        function opentab(tabname, event) {
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
+  <!-- Scripts -->
+  <script>
+    function opentab(tabname, event) {
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-            for (var tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (var tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
 
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
 
-        function showMessage(service) {
-            alert(service + " service is coming soon!");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyILwufAm6PEHCqv4OGnwFEOI2QY3Ne_BMNvfUI7GfeB1ESVUJmdcys8_nfaSBXMSHl/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyILwufAm6PEHCqv4OGnwFEOI2QY3Ne_BMNvfUI7GfeB1ESVUJmdcys8_nfaSBXMSHl/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 3000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 3000)
+          form.reset()
         })
-    </script>
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
